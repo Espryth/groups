@@ -1,0 +1,6 @@
+main: "me.espryth.groupsplugin.GroupsPlugin"
+name: "GroupsPlugin"
+version: "0.0.1"
+description: "Simple permission plugin"
+author: "Espryth"
+api-version: "1.21"

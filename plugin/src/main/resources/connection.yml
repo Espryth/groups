@@ -1,0 +1,7 @@
+driver: SQLite
+credentials:
+  database: "groups_test"
+  username: "root"
+  password: "root"
+  host: "localhost"
+  port: "3306"

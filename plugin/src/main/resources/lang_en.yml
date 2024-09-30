@@ -1,0 +1,90 @@
+command:
+  no-permission: "<red>You do not have permission to use this command"
+  subcommand:
+    invalid: "<red>Invalid subcommand"
+argument:
+  no-more: "<red>There are no more arguments"
+invalid:
+  boolean: "<red>Invalid boolean value"
+  integer: "<red>Invalid integer value"
+duration:
+  permanent: "PERMANENT"
+  format: "<days> Days, <hours> Hours, <minutes> Minutes, <seconds> Seconds"
+  invalid: "<red>Invalid duration format use (1d2h3m4s)"
+sender:
+  only-player: "<red>This command can only be used by a player"
+group:
+  not-found: "<red>Group <group> not found"
+  help:
+    - "<green>Group commands:"
+    - "<green>- /group create <name>"
+    - "<green>- /group delete <name>"
+    - "<green>- /group add <player> <group> [time]"
+    - "<green>- /group remove <player> <group>"
+    - "<green>- /group permission set <group> <permission> <value>"
+    - "<green>- /group permission remove <group> <permission>"
+    - "<green>- /group rename <old> <new>"
+    - "<green>- /group prefix <group> <prefix>"
+    - "<green>- /group suffix <group> <suffix>"
+    - "<green>- /group weight <group> <weight>"
+    - "<green>- /group info <group>"
+    - "<green>- /group check <player>"
+    - "<green>- /group testperm <permission>"
+    - "<green>- /group list"
+  create:
+    success: "<green>Group <name> created successfully"
+    error: "<red>A group with the name <name> already exists"
+  delete:
+    success: "<green>Group <group> deleted successfully"
+    default: "<red>You cannot delete the default group"
+  add:
+    success: "<green>Group <group> added to player <player> for <time>"
+    error: "<red>An error occurred while adding group <group> to player <player>"
+    default: "<red>Default group can be reassigned"
+  remove:
+    success: "<green>Group <group> removed from player <player>"
+    error: "<red>An error occurred while removing group <group> from player <player>"
+    not-in: "<red>Player <player> is not in group <group>"
+    default: "<red>Default group cannot be removed"
+  permission:
+    set: "<green>Permission <permission> set to <value> for group <group>"
+    remove: "<green>Permission <permission> removed from group <group>"
+  rename:
+    success: "<green>Group <old> renamed to <new>"
+    default: "<red>Default group cannot be renamed"
+  prefix: "<green>Group <group> prefix set to <prefix>"
+  suffix: "<green>Group <group> suffix set to <suffix>"
+  weight:
+    invalid: "<red>Invalid weight must be 0 - 100"
+    set: "<green>Group <group> weight set to <weight>"
+  info:
+    message:
+      - "<green>Group: <name>"
+      - "<green>Id: <id>"
+      - "<green>Prefix: <prefix>"
+      - "<green>Suffix: <suffix>"
+      - "<green>Weight: <weight>"
+      - "<green>Permissions:"
+    permission: "- <green><permission>: <value>"
+  check:
+    error: "<red>An error occurred while checking the groups of player <player>"
+    message:
+      header: "<green>Groups of player <player> (<groups>):"
+      group: "- <green><group> (<left>)"
+  list:
+    header: "<green>Groups:"
+    entry: "- <green><name> (<prefix>) (<suffix>) - <green><weight>"
+  permission-test:
+    success: "<green>You have permission <permission>"
+    failure: "<red>You do not have permission <permission>"
+chat-format: "<prefix><white><sender><suffix>: <message>"
+join-message: "<prefix><white><player> joined the game"
+quit-message: "<prefix><white><player> left the game"
+scoreboard:
+  title: "<gold>SCOREBOARD!!!!"
+  lines:
+    - "<green>Welcome <player>"
+    - "<white>Prefix: <prefix>"
+    - "<white>Suffix: <suffix>"
+    - " "
+    - "<gold>me.espryth"
